@@ -1,16 +1,20 @@
 import React from "react";
 import WorkImg from "../assets/workImg.jpeg";
-import realEstate from "../assets/realestate.jpg";
+import realEstate from "../assets/realestate.png";
+import RealEstate from "../assets/realestate1.jpg";
+import Finance from "../assets/finance.png";
+import Portal from "../assets/portal.png";
+import Mobile from "../assets/app.png";
 
 const Work = () => {
   return (
-    <div name="work" className="w-full md:h-screen text-gray-300 bg-green-700">
+    <div name="work" className="w-full md:h-screen text-black">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
+          <p className="text-4xl font-bold inline border-b-4 border-[#28a745]">
             Work
           </p>
-          <p className="py-6">// Check out some of my recent work</p>
+          <p className="py-4">Check out some of my recent work</p>
         </div>
 
         {/* Container */}
@@ -22,8 +26,8 @@ const Work = () => {
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
+              <span className="text-xl font-bold text-white tracking-wider">
+                Consultation Application
               </span>
               <div className="pt-8 text-center">
                 <a href="/">
@@ -45,11 +49,11 @@ const Work = () => {
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
+              <span className="text-xl font-bold text-white tracking-wider">
+                Real Estate website
               </span>
               <div className="pt-8 text-center">
-                <a href="/">
+                <a href="https://aeproperties.vercel.app/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
@@ -64,16 +68,16 @@ const Work = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${Finance})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
+              <span className="text-xl font-bold text-white tracking-wider">
+                An Investment Platform
               </span>
               <div className="pt-8 text-center">
-                <a href="/">
+                <a href="https://monnayfinance.com/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
@@ -87,16 +91,16 @@ const Work = () => {
             </div>
           </div>
           <div
-            style={{ backgroundImage: `url(${realEstate})` }}
+            style={{ backgroundImage: `url(${Portal})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
+              <span className="text-xl font-bold text-white tracking-wider">
+                Bank Intranet Portal
               </span>
               <div className="pt-8 text-center">
-                <a href="/">
+                <a href="https://premiumtrustbank.com/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
                   </button>
@@ -111,13 +115,13 @@ const Work = () => {
           </div>
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${Mobile})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
+              <span className="text-xl font-bold text-white tracking-wider">
+                Logistics Application
               </span>
               <div className="pt-8 text-center">
                 <a href="/">
@@ -134,13 +138,13 @@ const Work = () => {
             </div>
           </div>
           <div
-            style={{ backgroundImage: `url(${realEstate})` }}
+            style={{ backgroundImage: `url(${RealEstate})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
+              <span className="text-xl font-bold text-white tracking-wider">
+                Real Estate Webiste
               </span>
               <div className="pt-8 text-center">
                 <a href="/">

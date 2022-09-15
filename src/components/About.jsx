@@ -1,28 +1,42 @@
 import React from "react";
+import Me from "../assets/me.jpg";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-green-700 text-gray-300">
-      <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
+    <div name="about">
+      <div className="flex flex-col justify-center items-center my-10">
+        <div >
           <div className="sm:text-right pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-pink-600">
-              About
+            <p className="text-4xl font-bold inline border-b-4 border-[#28a745]">
+              About Me
             </p>
           </div>
           <div></div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-          <div className="sm:text-right text-4xl font-bold">
-            <p>Hi. I'm Juliet, nice to meet you. Please take a look around.</p>
+          <div>
+            <img src={Me} alt="/" />
           </div>
           <div>
             <p>
-              I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?
+              I am a front-end developer with expertise in HTML, CSS, JavaScript
+              and related frameworks such as ReactJS, NextJS, React-native,
+              NodeJS. Some of my works includes Logistics applications, News
+              website, Inventory website, Real-estate website.
+              <br />
+              My software designs are also highly effective and focused on
+              improving the productivity of businesses I have worked for. They
+              help these businesses gain a competitive advantage in their
+              respective fields.
+              <br />
+              With clear communications skills, I tend to deliver beyond the
+              expectations of my customers. I visualize their objectives to help
+              them achieve their targets, while also prioritizing their goals.
+              This process helps me to deliver platforms or systems that are
+              accurate, efficient, and highly productive.
+              <br />
+              Do you want to take your business to the next level? Let me be
+              your software developer today!
             </p>
           </div>
         </div>
