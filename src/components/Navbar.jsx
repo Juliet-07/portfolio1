@@ -88,6 +88,7 @@ const Navbar = () => {
               href="https://www.linkedin.com/in/juliet-kelechi-8126b8173/"
               className="flex justify-between items-center w-full text-gray-300"
               target="_blank"
+              rel="noreferrer"
             >
               Linkedin <FaLinkedin size={25} />
             </a>
@@ -97,6 +98,7 @@ const Navbar = () => {
               href="https://www.github.com/Juliet-07"
               className="flex justify-between items-center w-full text-gray-300"
               target="_blank"
+              rel="noreferrer"
             >
               Github <FaGithub size={25} />
             </a>
@@ -106,6 +108,7 @@ const Navbar = () => {
               href="ohankwerejulietkelechi@gmail.com"
               className="flex justify-between items-center w-full text-gray-300"
               target="_blank"
+              rel="noreferrer"
             >
               Email <HiOutlineMail size={25} />
             </a>
