@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_f5dvunq",
+        "template_vjr5n5a",
+        form.current,
+        "oiC7s5VYSbMGf8t5E"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("message sent")
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div
       name="contact"
       className="w-full h-screen bg-[#28a745] flex justify-center items-center p-4"
     >
       <form
-        method="POST"
-        action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c"
+        ref={form}
+        onSubmit={sendEmail}
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-8">
@@ -16,20 +38,21 @@ const Contact = () => {
             Contact
           </p>
           <p className="text-white py-4">
-            Submit the form below or shoot me an email - ohankwerejulietkelechi@gmail.com
+            Submit the form below or shoot me an email -
+            ohankwerejulietkelechi@gmail.com
           </p>
         </div>
         <input
           className="bg-white p-2"
           type="text"
           placeholder="Name"
-          name="name"
+          name="user_name"
         />
         <input
           className="my-4 p-2 bg-white"
           type="email"
           placeholder="Email"
-          name="email"
+          name="user_email"
         />
         <textarea
           className="bg-white p-2"
@@ -37,9 +60,13 @@ const Contact = () => {
           rows="10"
           placeholder="Message"
         ></textarea>
-        <button className="text-white border-2 hover:bg-[#28a745] hover:border-white px-4 py-3 my-8 mx-auto flex items-center">
-          Let's Collaborate
-        </button>
+        <input
+          type="submit"
+          value="Send"
+          className="text-white border-2 hover:bg-[#28a745] hover:border-white px-4 py-3 my-8 mx-auto flex items-center"
+        />
+        {/* Let's Collaborate */}
+        {/* </button> */}
       </form>
     </div>
   );

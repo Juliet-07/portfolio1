@@ -12,9 +12,9 @@ const Work = () => {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-[#28a745]">
-            Work
+            Projects
           </p>
-          <p className="py-4">Check out some of my recent work</p>
+          <p className="py-4">Check out some of my recent projects</p>
         </div>
 
         {/* Container */}
@@ -74,7 +74,7 @@ const Work = () => {
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-xl font-bold text-white tracking-wider">
-                An Investment Platform
+                An Investment Platform (Web and Mobile)
               </span>
               <div className="pt-8 text-center">
                 <a href="https://monnayfinance.com/">
@@ -121,7 +121,7 @@ const Work = () => {
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-xl font-bold text-white tracking-wider">
-                Logistics Application
+                Logistics Mobile Application
               </span>
               <div className="pt-8 text-center">
                 <a href="/">

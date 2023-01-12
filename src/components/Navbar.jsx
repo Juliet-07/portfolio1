@@ -9,9 +9,9 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#28a745] text-white">
+    <div className="fixed w-full h-24 flex justify-between items-center px-4 bg-[#28a745] text-white">
       <div>
-        <img src={Logo} alt="Logo" style={{ width: "60px" }} />
+        <img src={Logo} alt="Logo" style={{ width: "100px" }} />
       </div>
       {/* menu */}
       <ul className="hidden md:flex">
@@ -32,7 +32,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="work" smooth={true} duration={500}>
-            Work
+            Projects
           </Link>
         </li>
         <li>
@@ -87,6 +87,7 @@ const Navbar = () => {
             <a
               href="https://www.linkedin.com/in/juliet-kelechi-8126b8173/"
               className="flex justify-between items-center w-full text-gray-300"
+              target="_blank"
             >
               Linkedin <FaLinkedin size={25} />
             </a>
@@ -95,6 +96,7 @@ const Navbar = () => {
             <a
               href="https://www.github.com/Juliet-07"
               className="flex justify-between items-center w-full text-gray-300"
+              target="_blank"
             >
               Github <FaGithub size={25} />
             </a>
@@ -103,6 +105,7 @@ const Navbar = () => {
             <a
               href="ohankwerejulietkelechi@gmail.com"
               className="flex justify-between items-center w-full text-gray-300"
+              target="_blank"
             >
               Email <HiOutlineMail size={25} />
             </a>
@@ -111,6 +114,7 @@ const Navbar = () => {
             <a
               href="https://drive.google.com/file/d/1kAbzD-TJZ3D_cqqFQXVa3OTSYZP7hINW/view?usp=sharing"
               className="flex justify-between items-center w-full text-gray-300"
+              target="_blank"
             >
               Resume <BsFillPersonLinesFill size={25} />
             </a>
